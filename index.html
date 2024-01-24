@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <meta property="og:title" content="Custom Title">
+  <meta property="og:description" content="Custom Description">
+  <meta property="og:image" content="https://imagedelivery.net/77zrZ_11_UUAw0Erc0KqCA/d8d7d171-f056-46d8-2a63-f80172746f00/public">
+  <meta property="og:url" content="https://imagedelivery.net/77zrZ_11_UUAw0Erc0KqCA/d8d7d171-f056-46d8-2a63-f80172746f00/public">
+  <meta property="og:type" content="website">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .share-button {
+      padding: 10px 20px;
+      background-color: #1877f2;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button class="share-button" onclick="shareOnFacebook()">Share on Facebook</button>
+  <script>
+    function shareOnFacebook() {
+      var shareUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href);
+      window.open(shareUrl, '_blank');
+    }
+  </script>
+</body>
+</html>
